@@ -1,14 +1,11 @@
-
+let _d = window.document;
+let _b = document.getElementsByTagName('body')[0];
+let _h = document.getElementsByTagName('head')[0];
+let _url = 'https://mbrk.github.io/xmarktlet';
 class XM {
     constructor() {
 
-        this.d = window.document;
-        this.b = document.getElementsByTagName('body')[0];
-        this.h = document.getElementsByTagName('head')[0];
-        this.url = 'https://mbrk.github.io/xmarktlet';
         this.init();
-
-
     }
 
     init() {
@@ -20,17 +17,17 @@ class XM {
         let attr = {
             type: 'text/css',
             rel: 'stylesheet',
-            href: this.url + '/xm.css'
+            href: _url + '/xm.css'
         };
-        this.h.appendChild(XM._createElement('link', attr));
+        _h.appendChild(XM._createElement('link', attr));
     }
 
     createControlOverlay() {
-        this.b.appendChild(XM._createElement('div', {class: 'control-overlay'}));
+        _b.appendChild(XM._createElement('div', {class: 'control-overlay'}));
     }
 
     static _createElement(type = 'div', attr = {}){
-        let e = this.d.createElement(type);
+        let e = _d.createElement(type);
         for(let a in attr){
             e.setAttribute(a, attr[a]);
         }
@@ -38,4 +35,4 @@ class XM {
     }
 }
 
-let xm = new XM();
+new XM();
