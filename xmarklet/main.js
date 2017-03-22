@@ -1,6 +1,4 @@
-/**
- * Created by malte on 22.03.17.
- */
+
 class xMarklet {
     constructor() {
 
@@ -11,7 +9,7 @@ class xMarklet {
     }
 
     init() {
-
+        this.createControlOverlay();
     }
 
     createControlOverlay() {
