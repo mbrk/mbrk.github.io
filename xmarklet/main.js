@@ -16,6 +16,7 @@ class xMarklet {
         let overlay = this.d.createElement('div');
         overlay.setAttribute('class', 'control-overlay');
         this.d.appendChild(overlay);
+        console.log(overlay);
     }
 }
 
