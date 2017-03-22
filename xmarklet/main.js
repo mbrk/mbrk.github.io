@@ -3,6 +3,7 @@ class xMarklet {
     constructor() {
 
         this.d = window.document;
+        this.b = document.getElementsByTagName('body')[0];
         this.init();
 
 
@@ -15,7 +16,7 @@ class xMarklet {
     createControlOverlay() {
         let overlay = this.d.createElement('div');
         overlay.setAttribute('class', 'control-overlay');
-        this.d.appendChild(overlay);
+        this.b.appendChild(overlay);
         console.log(overlay);
     }
 }
