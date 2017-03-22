@@ -1,7 +1,7 @@
 let _d = window.document;
 let _b = document.getElementsByTagName('body')[0];
 let _h = document.getElementsByTagName('head')[0];
-let _url = 'https://mbrk.github.io/xmarktlet';
+let _url = 'https://mbrk.github.io/xmarklet';
 class XM {
     constructor() {
 
