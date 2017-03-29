@@ -6,6 +6,14 @@ class XM {
     constructor() {
 
         this.init();
+
+        this.identifierMap = {
+            'http://spiegel.de':{
+                ads: ['.adition','#spColumnAd'],
+                videos: ['#js-video-slider'],
+                meinung: ['.hpmeinungbox']
+            }
+        };
     }
 
     init() {
@@ -22,8 +30,16 @@ class XM {
         _h.appendChild(XM._createElement('link', attr));
     }
 
+    getIdentifier(){
+
+    }
+
     createControlOverlay() {
-        _b.appendChild(XM._createElement('div', {class: 'control-overlay'}));
+        let overlay = XM._createElement('div', {class: 'control-overlay'});
+        let
+
+
+        _b.appendChild(overlay);
     }
 
     static _createElement(type = 'div', attr = {}){
